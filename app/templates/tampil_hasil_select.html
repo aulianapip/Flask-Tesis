@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Hasil</title>
+
+</head>
+<body>
+<center>
+
+    {% for table in tables1 %}
+        {{ table|safe }}
+    {% endfor %}
+    {% for table in tables2 %}
+        {{ table|safe }}
+    {% endfor %}
+
+    <form action="http://localhost:5151/coba" method="POST" enctype="multipart/form-data">
+    <button type="submit">Clustering</button>
+</form>
+</center>
+</body>
+</html>
