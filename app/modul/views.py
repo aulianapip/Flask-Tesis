@@ -186,7 +186,7 @@ def Load_data():
     
     return render_template('load_data.html')
 
-@app.route('/load_data5', methods=['GET','POST'])
+@app.route('/load_data2', methods=['GET','POST'])
 def Load_data2():
     if request.method == 'POST':
         a=request.files['file'] #variabel untuk nyimpan file
