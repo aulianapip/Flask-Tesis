@@ -71,7 +71,7 @@ tr:hover            { background-color: #ffff99;}
                 
                     
                     <li>
-                       <form id="form1" action="http://localhost:5151/index" method="post"></form>
+                       <form id="form1" action="http://128.199.208.34:5000/index" method="post"></form>
                    
                         
                     <a href="javascript:;" onclick="document.getElementById('form1').submit();">
@@ -80,10 +80,10 @@ tr:hover            { background-color: #ffff99;}
                         
                     </li>
                     <li>
-                        <a href="http://localhost:5151/load_data"><i class="fa fa-desktop fa-3x"></i> Load Data</a>
+                        <a href="http://128.199.208.34:5000/load_data"><i class="fa fa-desktop fa-3x"></i> Load Data</a>
                     </li>
                     <li>
-                    <form id="form2" action="http://localhost:5151/text_mining" method="post"></form>
+                    <form id="form2" action="http://128.199.208.34:5000/text_mining" method="post"></form>
                          <a class="active-menu" href="javascript:;" onclick="document.getElementById('form2').submit();">
                             
                         <i class="fa fa-dashboard fa-3x"></i>Text Mining</a>
@@ -135,7 +135,7 @@ tr:hover            { background-color: #ffff99;}
         {{ table|safe }}
     {% endfor %}
     <br>
-<form action="http://localhost:5151/text_stemming" method="POST" enctype="multipart/form-data">
+<form action="http://128.199.208.34:5000/text_stemming" method="POST" enctype="multipart/form-data">
     <button type="submit">STEMMING</button>
 </form>
                    
