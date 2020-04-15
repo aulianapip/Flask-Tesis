@@ -510,7 +510,7 @@ def harmonic():
     table_hasil = pd.DataFrame(list(get_hasil))
 
 
-    return render_template("k-harmonic.html", tables=[table_hasil.to_html(classes='table table-striped table-bordered table-hover')])
+    return render_template("TESIS.html", tables=[table_hasil.to_html(classes='table table-striped table-bordered table-hover')])
 
 @app.route('/allfile', methods=['GET', 'POST'])
 def allfile():
