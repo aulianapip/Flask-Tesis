@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Upload Data Skripsi </title>
+    <!-- Bootstrap Styles-->
+    <link rel="stylesheet" href={{url_for('static',filename='assets/css/bootstrap.css')}}  />
+    <!-- FontAwesome Styles-->
+    <link rel="stylesheet" href={{url_for('static',filename='assets/css/font-awesome.css')}} />
+    <!-- Morris Chart Styles-->
+    <link rel="stylesheet" href={{url_for('static',filename='assets/js/morris/morris-0.4.3.min.css')}} />
+        <!-- Custom Styles-->
+    <link rel="stylesheet" href={{url_for('static',filename='assets/css/custom-styles.css')}} />
+    <!-- Google Fonts-->
+    <link rel="stylesheet" type='text/css' href={{url_for('static',filename='http://fonts.googleapis.com/css?family=Open+Sans')}} />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Admin </span>
+                </button>
+                <a class="navbar-brand" href="index"><b>K-Harmonic</b></a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-sign-out fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="divider"></li>
+                        <li><a href="http://128.199.208.34:5151/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-top-links navbar-right">
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                  <li>
+                          <a  href="index"><i class="fa fa-dashboard"></i> Dashboard</a>
+                      </li>
+                      <li>
+                          <a  href="uploading"><i class="fa fa-fw fa-file"></i> Load Data</a>
+                      </li>
+                      <li>
+                          <form id="form1" action="http://128.199.208.34:5151/tokenisasi" method="post"></form>
+                          <a  href="javascript:;" onclick="document.getElementById('form1').submit();"><i class="fa fa-edit"></i> Text Mining</a>
+                      </li>
+                      <li>
+                          <a class="active-menu" href="inputK"><i class="fa fa-qrcode"></i> Clustering</a>
+                      </li>
+                      <li>
+                          <form id="form2" action="http://128.199.208.34:5151/allfile" method="post"></form>
+                          <a href="javascript:;" onclick="document.getElementById('form2').submit();"><i class="fa fa-desktop"></i>Hasil</a>
+                      </li>
+                      <li>
+                          <form id="form3" action="http://128.199.208.34:5151/chart" method="post"></form>
+                          <a href="javascript:;" onclick="document.getElementById('form3').submit();"><i class="fa fa-bar-chart-o"></i>Grafik</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            K-harmonic Means
+                        </h1>
+                    </div>
+                    </div>
+        <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                        </div>
+                        <div class="panel-body">
+                            <form action="http://128.199.208.34:5151/harmonic"  method="POST" enctype="multipart/form-data">
+                                <table>
+                                    <tr>
+                                     <div class="form-group">
+                                         <td><label>Input K</label></td>
+                                         <td>: </td>
+                                         <td><input class="form-control" type="text" name="kluster" required></td>
+                                     </div>
+                                    </tr>
+                                    <tr><div>
+                                        <td>
+                                        <button class="btn btn-primary" type="submit">K-Harmonic Means</button>
+                                        </td>
+                                    </div>
+
+                                    </tr>
+
+                                </table>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+
+                    <!--  end  Context Classes  -->
+                </div>
+            </div>
+                <!-- /. ROW  -->
+   </div>
+                    </div>
+                    <!--End Advanced Tables -->
+
+                    <!--  end  Context Classes  -->
+                </div>
+            </div>
+
+
+</div>
+
+    </div>
+ </div>
+               </div>
+
+
+   <script src="static/assets/js/jquery-1.10.2.js"></script>
+      <!-- Bootstrap Js -->
+    <script src="static/assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="static/assets/js/jquery.metisMenu.js"></script>
+     <!-- DATA TABLE SCRIPTS -->
+    <script src="static/assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="static/assets/js/dataTables/dataTables.bootstrap.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+         <!-- Custom Js -->
+    <script src="static/assets/js/custom-scripts.js"></script>
+</body>
+</html>

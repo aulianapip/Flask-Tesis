@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <!--<link rel="stylesheet" type="text/css" href="login.css">-->
+         <link rel="stylesheet" href={{url_for('static',filename='assets/css/login.css')}}  />
+    </head>
+    <body>
+        <div id="kotak">
+            <div id="atas">
+                LOGIN ADMIN
+            </div>
+            <div id="bawah">
+                <form form action="http://128.199.208.34:5151/login"  method="POST">
+                    <input class="masuk" type="text" autocomplete="off" placeholder="Username .." name="username" required><br/>
+                    <input class="masuk" type="password" autocomplete="off" placeholder="Password .." name="pass" required><br/>
+                    <input id="tombol" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
