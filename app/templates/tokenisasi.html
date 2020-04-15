@@ -35,7 +35,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li class="divider"></li>
-                        <li><a href="http://128.199.208.34:5151/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="http://128.199.208.34:5000/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                 </li>
@@ -57,18 +57,18 @@
                           <a  href="uploading"><i class="fa fa-fw fa-file"></i> Load Data</a>
                       </li>
                       <li>
-                          <form id="form1" action="http://128.199.208.34:5151/tokenisasi" method="post"></form>
+                          <form id="form1" action="http://128.199.208.34:5000/tokenisasi" method="post"></form>
                           <a class="active-menu" href="javascript:;" onclick="document.getElementById('form1').submit();"><i class="fa fa-edit"></i> Text Mining</a>
                       </li>
                       <li>
                           <a href="inputK"><i class="fa fa-qrcode"></i> Clustering</a>
                       </li>
                       <li>
-                          <form id="form2" action="http://128.199.208.34:5151/allfile" method="post"></form>
+                          <form id="form2" action="http://128.199.208.34:5000/allfile" method="post"></form>
                           <a href="javascript:;" onclick="document.getElementById('form2').submit();"><i class="fa fa-desktop"></i>Hasil</a>
                       </li>
                       <li>
-                          <form id="form3" action="http://128.199.208.34:5151/chart" method="post"></form>
+                          <form id="form3" action="http://128.199.208.34:5000/chart" method="post"></form>
                           <a href="javascript:;" onclick="document.getElementById('form3').submit();"><i class="fa fa-bar-chart-o"></i>Grafik</a>
                       </li>
 
@@ -90,9 +90,9 @@
                             Hasil Tokenisasi Judul Skripsi
                         </h1>
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="http://128.199.208.34:5151/tokenisasi">Tokenisasi</a></li>
-                          <li class="breadcrumb-item"><a href="http://128.199.208.34:5151/filtering">Filtering</a></li>
-                          <li class="breadcrumb-item"><a href="http://128.199.208.34:5151/stemming">Stemming</a></li>
+                          <li class="breadcrumb-item"><a href="http://128.199.208.34:5000/tokenisasi">Tokenisasi</a></li>
+                          <li class="breadcrumb-item"><a href="http://128.199.208.34:5000/filtering">Filtering</a></li>
+                          <li class="breadcrumb-item"><a href="http://128.199.208.34:5000/stemming">Stemming</a></li>
                         </ol>
                     </div>
                     </div>
@@ -115,7 +115,7 @@
        </thead>
    </table>
 </div>
-     <form action="http://128.199.208.34:5151/filtering"  method="POST" enctype="multipart/form-data">
+     <form action="http://128.199.208.34:5000/filtering"  method="POST" enctype="multipart/form-data">
         <center>
 
             <button class="btn btn-primary" type="submit">Filtering</button>
